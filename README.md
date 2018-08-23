@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-enums.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-enums
-[travis-image]: https://img.shields.io/travis/eggjs/egg-enums.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-enums
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-enums.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-enums?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-enums.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-enums
+[travis-image]: https://img.shields.io/travis/LzxHahaha/egg-enums.svg?style=flat-square
+[travis-url]: https://travis-ci.org/LzxHahaha/egg-enums
+[codecov-image]: https://img.shields.io/codecov/c/github/LzxHahaha/egg-enums.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/LzxHahaha/egg-enums?branch=master
+[david-image]: https://img.shields.io/david/LzxHahaha/egg-enums.svg?style=flat-square
+[david-url]: https://david-dm.org/LzxHahaha/egg-enums
 [snyk-image]: https://snyk.io/test/npm/egg-enums/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-enums
 [download-image]: https://img.shields.io/npm/dm/egg-enums.svg?style=flat-square
@@ -72,7 +72,7 @@ console.log(app.enums.Colors.GREEN === 4);    // true
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/LzxHahaha/egg-enums/issues).
 
 ## License
 
