@@ -1,6 +1,6 @@
 {
   "name": "egg-enums",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enums for Egg.js",
   "eggPlugin": {
     "name": "enums"
