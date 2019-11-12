@@ -18,9 +18,15 @@ describe('test/enums.test.js', () => {
   it('should get Letters.B === 1', () => {
     assert(app.enums.Letters.B === 1);
   });
+  it('should get Letters[2] === "C"', () => {
+    assert(app.enums.Letters[2] === 'C');
+  });
 
   it('should get Colors.GREEN === 4', () => {
     assert(app.enums.Colors.GREEN === 4);
+  });
+  it('should get Colors[5].name === "blue"', () => {
+    assert(app.enums.Colors[5].name === 'blue');
   });
 
   it('should get Dir.Type.DIR === 0', () => {

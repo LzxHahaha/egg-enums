@@ -49,6 +49,7 @@ exports.enums = {
 ```js
 // {app_root}/app/enums/letters.js
 // use array to init enum
+// each item's index can be used to find the item
 module.exports = app => app.Enum([
   'A',
   'B',
@@ -59,15 +60,23 @@ module.exports = app => app.Enum([
 
 // {app_root}/app/enums/colors.js
 // use object to set the values
+// item can be an object, but MUST have an `id` field at the top level
 module.exports = app => app.Enum({
   RED: 1,
   GREEN: 4,
-  BLUE: 5,
+  BLUE: {
+    id: 5,
+    name: 'blue',
+    // other...
+  },
 });
 
 // then you can use like this
 console.log(app.enums.Letters.B === 1);       // true
+console.log(app.enums.Letters[2] === 'C');    // true
+
 console.log(app.enums.Colors.GREEN === 4);    // true
+console.log(app.enums.Colors[5].name === 'blue');    // true
 ```
 
 ## Questions & Suggestions
