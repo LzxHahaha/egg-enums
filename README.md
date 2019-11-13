@@ -79,6 +79,45 @@ console.log(app.enums.Colors.GREEN === 4);    // true
 console.log(app.enums.Colors[5].name === 'blue');    // true
 ```
 
+You can get all keys by use `.$keys` to get all enums.
+
+```js
+// app.enums.Letters.$keys
+[
+  {
+    "id": 0,
+    "key": "A"
+  },
+  {
+    "id": 1,
+    "key": "B"
+  },
+  {
+    "id": 2,
+    "key": "C"
+  }
+]
+
+// app.enums.Colors.$keys
+[
+  {
+    "id": 1,
+    "key": "RED"
+  },
+  {
+    "id": 4,
+    "key": "GREEN"
+  },
+  {
+    "id": 5,
+    "key": "BLUE",
+    "name": "blue"
+  }
+]
+```
+
+So make sure that DO NOT use `$keys` to named an enum or use field `key` in enum items top level when you config.
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/LzxHahaha/egg-enums/issues).

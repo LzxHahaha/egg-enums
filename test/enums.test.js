@@ -15,6 +15,10 @@ describe('test/enums.test.js', () => {
   after(() => app.close());
   afterEach(mock.restore);
 
+  it('should get Letters.$keys === [{id:0, key:"A"}, {id:1, key:"B"}, {id:2, key:"C"}]', () => {
+    const json = JSON.stringify(app.enums.Letters.$keys);
+    assert(json === '[{"id":0,"key":"A"},{"id":1,"key":"B"},{"id":2,"key":"C"}]');
+  });
   it('should get Letters.B === 1', () => {
     assert(app.enums.Letters.B === 1);
   });
