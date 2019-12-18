@@ -42,7 +42,11 @@ exports.enums = {
 
 ## Configuration
 
-**There is nothing you need to config.**
+If you're using typescript, add `import 'egg-enums';` to your `index.d.ts` (
+go to [egg document](https://eggjs.org/en/tutorials/typescript.html#theres-no-loaded-objects-when-using-eggs-plugin) to get more information
+).
+
+In javascript there is NOTHING need to be config.
 
 ## Example
 
